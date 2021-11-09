@@ -1,0 +1,14 @@
+/**
+ * Homework 1 Exercise 4
+ * 
+ * @author Phu Vu
+ * @since 08/25/2021
+ *
+ */
+
+final class Product {
+	private final String name = "";
+	private final String description;
+	
+
+}

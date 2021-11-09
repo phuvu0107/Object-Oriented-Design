@@ -1,0 +1,36 @@
+import java.util.*;
+public class MethodTest {
+	private static <T> int count(ArrayList<T> obj) {
+		return obj.size();
+	}
+	public static void main (String [] arg) {
+		ArrayList<String> stringArr = new ArrayList<String>();
+		ArrayList<Integer> intArr = new ArrayList<Integer>();
+		ArrayList<Double> doubleArr = new ArrayList<Double>();
+		
+		stringArr.add("Hello");
+		stringArr.add("My");
+		stringArr.add("Name");
+		stringArr.add("Is");
+		stringArr.add("Phu");
+		
+		intArr.add(1);
+		intArr.add(2);
+		intArr.add(3);
+		intArr.add(4);
+		intArr.add(5);
+		intArr.add(6);
+		
+		doubleArr.add(2.1);
+		doubleArr.add(2.2);
+		doubleArr.add(2.3);
+		doubleArr.add(2.4);
+		doubleArr.add(2.5);
+		doubleArr.add(2.6);
+		doubleArr.add(2.7);
+		doubleArr.add(2.8);
+		
+		System.out.println(count(stringArr));
+		
+	}
+}

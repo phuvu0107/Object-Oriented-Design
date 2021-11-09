@@ -1,0 +1,13 @@
+/**
+ * Homework 1 Exercise 3
+ * 
+ * @author Phu Vu
+ * @since 08/25/2021
+ *
+ */
+public class Person {
+	//variables
+	private String firstName, lastName, address, gender;
+	private int SSN, age;
+	private float weight;
+}

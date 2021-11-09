@@ -1,0 +1,18 @@
+
+public class EmployeeTest {
+	public static void main (String [] arg) {
+		//instantiate employees
+		Employee joe = new Employee("Joe", "Smith", "833 Tersi Court", "Male", "104-849-1930",44, 189.9f, 200001, "contractor", 60);
+		Employee lisa = new Employee("Lisa", "Gray", "835 Tersi Court", "Female", "104-849-9999", 22, 125.4f, 200002, "full time", 110000);
+		Employee timothy = new Employee("Timothy", "Briggs", "900 Tersi Court", "Male", "104-849-8483", 29, 150f, 200003, "full time", 80000);
+		Employee george = new Employee("George", "Wallace", "2000 Cropley Avenue", "Male", "105-349-9030", 18, 280f, 200049, "part time", 20);
+		Employee amy = new Employee("Amy", "Student", "48 Neal Avenue", "Female", "106-749-1220", 30, 110.5f, 303033, "contractor", 45);
+		
+		//Calculate Pay
+		joe.calculatePay(30);
+		lisa.calculatePay(110000);
+		timothy.calculatePay(80000);
+		george.calculatePay(20);
+		amy.calculatePay(45);
+	}
+}

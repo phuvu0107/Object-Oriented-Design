@@ -1,0 +1,53 @@
+/*
+ * HW5 Exercise 1
+ * @author Truong Phu VU
+ * @since 11/7/2021
+ */
+
+import java.util.*;
+
+public class Shapes extends Thread {
+	private ArrayList<Shapes> shapeList;
+
+	// constructor
+
+	Shapes() {
+
+	}
+
+	Shapes(ArrayList shapeList) {
+		this.shapeList = shapeList;
+	}
+
+	// getters and setters
+	public ArrayList getShapeList() {
+		return shapeList;
+	}
+
+	public void setShapeList(ArrayList shapeList) {
+		this.shapeList = shapeList;
+	}
+
+	// methods
+
+	public void add(Shapes obj) {
+		shapeList.add(obj);
+	}
+
+	public void remove(Shapes obj) {
+		shapeList.remove(shapeList.indexOf(obj));
+	}
+
+	synchronized public void compute() {
+		for (Shapes i : shapeList) {
+			i.compute();
+		}
+	}
+	
+	public void run() {
+		for(Shapes i : shapeList) {
+			i.compute();
+		}
+	}
+
+}

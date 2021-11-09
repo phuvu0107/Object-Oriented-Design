@@ -1,0 +1,11 @@
+/*
+ * HW5 Exercise 1
+ * @author Truong Phu VU
+ * @since 11/7/2021
+ */
+public class Rectangle {
+	//var
+	private double length, width;
+	
+	
+}

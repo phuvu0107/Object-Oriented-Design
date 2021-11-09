@@ -1,0 +1,19 @@
+
+public class Hexagon {
+	//var
+	private double side;
+	
+	//constructor
+	Hexagon(){
+		
+	}
+	
+	Hexagon(double side){
+		this.side = side;
+	}
+	
+	//getter and setter
+	public double getSide() {
+		return this.side;
+	}
+}
